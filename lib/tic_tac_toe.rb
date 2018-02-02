@@ -123,8 +123,10 @@ def winner(board)
 end
 end
 
+
 def play(board)
   until won?(board) || over?(board)
+    binding.pry
     turn(board)
   end
   if won?(board) != nil
